@@ -59,6 +59,6 @@ app.get('/', (req, res) => {
 //     res.sendFile(duongDanFilecss);
 //   })
 router(app);
-app.listen(8000,()=>{
-    console.log("server is running... localhost:8000");
+app.listen(process.env.PORT,()=>{
+    console.log("server is running...");
 })
